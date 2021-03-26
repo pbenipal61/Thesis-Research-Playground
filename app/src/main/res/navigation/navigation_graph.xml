@@ -9,5 +9,14 @@
         android:id="@+id/nav_landingFragment"
         android:name="com.example.thesisresearchplayground.ui.main.view.LandingFragment"
         android:label="fragment_landing"
-        tools:layout="@layout/fragment_landing" />
+        tools:layout="@layout/fragment_landing" >
+        <action
+            android:id="@+id/action_nav_landingFragment_to_nav_settingsFragment"
+            app:destination="@id/nav_settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_settingsFragment"
+        android:name="com.example.thesisresearchplayground.ui.main.view.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings"/>
 </navigation>
