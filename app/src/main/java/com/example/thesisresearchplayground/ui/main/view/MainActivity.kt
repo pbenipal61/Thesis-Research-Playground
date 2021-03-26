@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        val id = item.itemId`
+        val id = item.itemId
         if (id == R.id.nav_landingFragment) {
             navController.navigate(R.id.action_nav_settingsFragment_to_nav_landingFragment)
         } else if (id == R.id.nav_settingsFragment) {
