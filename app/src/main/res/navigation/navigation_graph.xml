@@ -15,6 +15,9 @@
             app:destination="@id/nav_settingsFragment"
             app:popUpToInclusive="true"
             app:popUpTo="@id/navigation_graph"/>
+        <action
+            android:id="@+id/action_nav_landingFragment_to_aboutFragment"
+            app:destination="@id/nav_aboutFragment" />
     </fragment>
     <fragment
         android:id="@+id/nav_settingsFragment"
@@ -23,6 +26,21 @@
         tools:layout="@layout/fragment_settings">
         <action
             android:id="@+id/action_nav_settingsFragment_to_nav_landingFragment"
+            app:destination="@id/nav_landingFragment" />
+        <action
+            android:id="@+id/action_nav_settingsFragment_to_aboutFragment"
+            app:destination="@id/nav_aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_aboutFragment"
+        android:name="com.example.thesisresearchplayground.ui.main.view.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_nav_settingsFragment"
+            app:destination="@id/nav_settingsFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_nav_landingFragment"
             app:destination="@id/nav_landingFragment" />
     </fragment>
 </navigation>

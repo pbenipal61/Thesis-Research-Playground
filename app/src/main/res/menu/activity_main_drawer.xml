@@ -7,4 +7,7 @@
     <item
         android:id="@+id/nav_settingsFragment"
         android:title="Settings"/>
+    <item
+        android:title="About"
+        android:id="@+id/nav_aboutFragment"/>
 </menu>
