@@ -10,7 +10,7 @@ import com.example.thesisresearchplayground.utils.NetworkHelper
 import com.example.thesisresearchplayground.utils.Resource
 import kotlinx.coroutines.launch
 
-class MainViewModel constructor(
+class MainActivityViewModel constructor(
     private val mainRepository: MainRepository,
     private val networkHelper: NetworkHelper
 ): ViewModel() {
