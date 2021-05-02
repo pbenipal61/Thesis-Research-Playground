@@ -30,6 +30,7 @@ class SettingsViewTests: TestSet() {
     @Test
     fun test_01_checkRandomSwitchExists() {
         settingsViewModel.goToSettingsView()
+        ...
     }
 
 }
